@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" class="bg-app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colorcon</title>
+
+    <link rel="stylesheet" href="/css/app.min.css"/>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top bg-navy">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand tx-white" href="/index.html">
+            <span class="brand-logo">
+                <img src="/img/icon-128.png" alt=""/>
+            </span>
+            <span class="brand-logo-text">
+                <span style="color: #FF9800;">C</span>
+                <span style="color: #8BC34A;" class="glyphicon glyphicon-adjust tx-10"></span>
+                <span style="color: #03A9F4;">L</span>
+                <span style="color: #E91E63;" class="glyphicon glyphicon-adjust tx-15"></span>
+                <span style="color: #9C27B0;">R</span>
+                <span style="color: #009688;">C</span>
+                <span style="color: #FFEB3B;" class="glyphicon glyphicon-adjust tx-10"></span>
+                <span style="color: #F44336;">N</span>
+            </span>
+        </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="menu-item">
+                <a href="/index.html">
+                    <i class="glyphicon glyphicon-home"></i> Home
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="color-groups.html">
+                    <i class="glyphicon glyphicon-adjust"></i> Color Groups
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="/about.html">
+                    <i class="glyphicon glyphicon-king"></i> About
+                </a>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</nav>
+
+<hr class="nav-spacer"/>
+
+<div class="container pos-middle pdt-40 pdb-70">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <input onkeyup="convert(this)" color-type="hex" id="hex" type="text" class="form-control text-center holder-white" placeholder="HEX" />
+            </div>
+
+            <div class="form-group">
+                <input onkeyup="convert(this)" color-type="rgb" id="rgb" type="text" class="form-control text-center holder-white" placeholder="RGB" />
+            </div>
+
+            <div class="text-center">
+                <i onclick="randomizeColor()" class="glyphicon glyphicon-random" id="btnRandom"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/app.min.js"></script>
+
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

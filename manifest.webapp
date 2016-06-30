@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "name": "Colorcon",
+  "description": "Colorcon is a color converter application that supports different conversion color types such as hex and rgb. Created by Lorenzo Yee",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/img/icon-512.png",
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Lorenzo Yee"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
